@@ -123,7 +123,7 @@ uint32_t bcm2835_peri_read(volatile uint32_t *paddr)
  * will follow.  The sequence must terminate with memory barrier
  * before any read or write to another peripheral can occur.
  * The MB can be explicit, or one of the barrier read/write calls.
- */ 
+ */
 uint32_t bcm2835_peri_read_nb(volatile uint32_t *paddr)
 {
     if (debug) {
