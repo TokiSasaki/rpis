@@ -123,7 +123,7 @@ uint32_t bcm2835_peri_read(volatile uint32_t *paddr)
  * will follow.  The sequence must terminate with memory barrier
  * before any read or write to another peripheral can occur.
  * The MB can be explicit, or one of the barrier read/write calls.
- */
+ */ 
 uint32_t bcm2835_peri_read_nb(volatile uint32_t *paddr)
 {
     if (debug) {
@@ -1463,7 +1463,7 @@ int main(int argc, char **argv)
 	/* Read some data */
 	uint8_t value = bcm2835_gpio_lev(RPI_GPIO_P1_15);
 	printf("read from pin 15: %d\n", value);
-	
+
 	/* wait a bit */
 	bcm2835_delay(500);
     }
