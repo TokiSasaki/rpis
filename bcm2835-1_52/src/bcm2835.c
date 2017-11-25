@@ -18,7 +18,7 @@ http://www.raspberrypi.org/wp-content/uploads/2012/02/BCM2835-ARM-Peripherals.pd
 #include <sys/types.h>
 #include <time.h>
 #include <unistd.h>
-
+/* komento */
 #define BCK2835_LIBRARY_BUILD
 #include "bcm2835.h"
 
