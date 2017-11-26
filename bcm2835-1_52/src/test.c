@@ -14,15 +14,15 @@
 
 int main(int argc, char **argv)
 {
-  if (geteuid() == 0 && !getenv("FAKEROOTKEY")) {
-    if (!bcm2835_init())
-      return 1;
-    if (!bcm2835_close())
-      return 1;
-  } else {
-    fprintf(stderr,
-            "****You need to be root to properly run this test program\n");
-    return 1;
-  }
-  return 0;
+    if (geteuid() == 0 && !getenv("FAKEROOTKEY")) {
+        if (!bcm2835_init())
+            return 1;
+        if (!bcm2835_close())
+            return 1;
+    } else {
+        fprintf(stderr,
+                "****You need to be root to properly run this test program\n");
+        return 1;
+    }
+    return 0;
 }
